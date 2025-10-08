@@ -146,7 +146,7 @@ export default function Hero({ onNavigateToContact, onNavigateToCases }: HeroPro
                 <div className="text-sm text-slate-600">（メガベンチャー様）</div>
               </div>
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-white/50 shadow-2xl">
-                <div className="text-sm font-semibold mb-2 text-slate-700">ECサイト離反顧客特定モデルの構築</div>
+                <div className="text-sm font-semibold mb-2 text-slate-700">ECサイトにおける<br />離反顧客特定モデルの構築</div>
                 <div className="text-2xl font-bold mb-2 text-slate-800">4倍</div>
                 <div className="text-sm text-slate-600">（大手製造業商社様）</div>
               </div>
