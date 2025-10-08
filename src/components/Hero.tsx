@@ -167,10 +167,10 @@ export default function Hero({ onNavigateToContact, onNavigateToCases }: HeroPro
           >
             無料相談を予約する
           </button>
-          <button 
+          <button
             onClick={onNavigateToCases}
             title="事例を見る - Casesセクションに移動"
-            className="bg-white/90 text-slate-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border-2 border-white/50 min-w-[200px] font-bold cursor-pointer"
+            className="bg-white/90 text-slate-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border-2 border-white/50 min-w-[200px] cursor-pointer"
           >
             事例を見る
           </button>
