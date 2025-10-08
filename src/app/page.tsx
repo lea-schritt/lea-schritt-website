@@ -55,12 +55,24 @@ export default function Home() {
     }
   }
 
+  // デスクトップのみスワイプを有効化
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
   const handlers = useSwipeable({
-    onSwipedLeft: goNext,
-    onSwipedRight: goPrev,
+    onSwipedLeft: isMobile ? undefined : goNext,
+    onSwipedRight: isMobile ? undefined : goPrev,
     preventScrollOnSwipe: false,
-    trackMouse: true,
-    delta: 50, // スワイプ感度調整
+    trackMouse: !isMobile,
+    delta: 50,
   })
 
   useEffect(() => {
