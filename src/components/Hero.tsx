@@ -159,10 +159,10 @@ export default function Hero({ onNavigateToContact, onNavigateToCases }: HeroPro
           transition={{ duration: 0.8, delay: 1.0 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button 
+          <button
             onClick={onNavigateToContact}
             title="無料相談を予約する - Contactセクションに移動"
-            className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 min-w-[200px] hover:opacity-90 border-2 border-white/20 cursor-pointer" 
+            className="text-white px-8 py-3 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 w-[220px] hover:opacity-90 border-2 border-white/20 cursor-pointer"
             style={{background: 'linear-gradient(to right, #01607B, #4682B4)', textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}
           >
             無料相談を予約する
@@ -170,7 +170,7 @@ export default function Hero({ onNavigateToContact, onNavigateToCases }: HeroPro
           <button
             onClick={onNavigateToCases}
             title="事例を見る - Casesセクションに移動"
-            className="bg-white/90 text-slate-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border-2 border-white/50 min-w-[200px] cursor-pointer"
+            className="bg-white/90 text-slate-800 px-8 py-3 rounded-full text-base sm:text-lg font-semibold hover:bg-white transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 border-2 border-white/50 w-[220px] cursor-pointer"
           >
             事例を見る
           </button>
