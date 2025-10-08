@@ -56,10 +56,11 @@ export default function Home() {
   }
 
   const handlers = useSwipeable({
-    onSwipedUp: goNext,
-    onSwipedDown: goPrev,
-    preventScrollOnSwipe: true,
+    onSwipedLeft: goNext,
+    onSwipedRight: goPrev,
+    preventScrollOnSwipe: false,
     trackMouse: true,
+    delta: 50, // スワイプ感度調整
   })
 
   useEffect(() => {
@@ -108,9 +109,9 @@ export default function Home() {
   }
 
   return (
-    <div 
+    <div
       {...handlers}
-      className="h-screen w-full overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50 relative"
+      className="h-screen w-full overflow-x-hidden overflow-y-auto bg-gradient-to-br from-slate-50 to-blue-50 relative"
     >
       <Navigation 
         currentSection={currentSection}
@@ -121,16 +122,16 @@ export default function Home() {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSection}
-          initial={{ y: 300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -300, opacity: 0 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 300, 
+          initial={{ x: 300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -300, opacity: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
             damping: 30,
             duration: 0.6
           }}
-          className="h-full w-full"
+          className="min-h-full w-full overflow-y-auto"
         >
           {currentSection === 0 ? (
             <Hero onNavigateToContact={navigateToContact} onNavigateToCases={navigateToCases} />
