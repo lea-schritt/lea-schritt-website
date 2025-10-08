@@ -1,0 +1,29 @@
+# 機密情報（GitHubにアップロードしない）
+.env
+contacts.json
+rate_limit.json
+
+# バックアップファイル
+index_backup.html
+*.bak
+*.swp
+*.tmp
+
+# エディタ設定
+.vscode/
+.idea/
+*.sublime-*
+
+# システムファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ログファイル
+*.log
+error_log
+
+# 一時ファイル
+tmp/
+temp/
+cache/

@@ -1,0 +1,820 @@
+<!DOCTYPE html><!--SwxzN78PBQjP_Lse3OXVH--><html lang="ja"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/f1fa9895ef0df7e0.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/css/0cb55fa33c900bdc.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-4e08188f78b7cd2d.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-f9c534389f1b5ee3.js" async=""></script><script src="/_next/static/chunks/main-app-2a82d9bbab796f90.js" async=""></script><script src="/_next/static/chunks/219-a552be5d53462a94.js" async=""></script><script src="/_next/static/chunks/app/page-846a616be6e8b8bf.js" async=""></script><title>Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング</title><meta name="description" content="Lea Schritt は、経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。"/><link rel="author" href="https://lea-schritt.co.jp"/><meta name="author" content="Lea Schritt"/><meta name="keywords" content="DX,データ可視化,BI,Power BI,Tableau,AI導入,RAG,AIエージェント,離反検知,貸倒検知,内製化,長崎 コンサル,九州 コンサル,伴走 実装"/><meta name="robots" content="index, follow"/><meta property="og:title" content="Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング"/><meta property="og:description" content="経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。"/><meta property="og:site_name" content="Lea Schritt"/><meta property="og:locale" content="ja_JP"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング"/><meta name="twitter:description" content="経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。"/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID', {
+    page_title: 'Lea Schritt - ホームページ',
+    page_location: window.location.href,
+    custom_map: {
+      'custom_parameter_1': 'page_section'
+    }
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head><body class="__variable_5cffc6 __variable_5c4a2f font-sans antialiased">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+/* ナビゲーションとコンテンツの重なり防止 */
+body {
+  padding-top: 0 !important;
+}
+
+nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* モバイルメニュー */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  z-index: 9998;
+  padding-top: 80px;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.mobile-menu-item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
+.mobile-menu-item:hover {
+  color: #2563eb;
+}
+
+section.min-h-screen {
+  padding-top: 80px !important;
+}
+
+.hero-content {
+  margin-top: 60px !important;
+}
+
+/* カスタムフォントサイズ（画面幅に応じて） */
+h1 {
+  font-size: 1.5rem !important; /* 450px以下用 */
+}
+
+h1 span:last-child {
+  font-size: 1.25rem !important; /* 日本語テキスト */
+}
+
+/* 600px以上 */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  h1 span:last-child {
+    font-size: 2rem !important;
+  }
+}
+
+/* 900px以上 */
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+  h1 span:last-child {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* 1200px以上 */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+  h1 span:last-child {
+    font-size: 3rem !important;
+  }
+
+  /* Data と Health のサイズを統一（大画面） */
+  h1 span[style*="3b82f6"],
+  h1 span[style*="84cc16"] {
+    font-size: 4rem !important;
+  }
+}
+
+/* Data と Health のサイズを統一 */
+h1 span[style*="3b82f6"],
+h1 span[style*="84cc16"] {
+  font-size: inherit !important;
+}
+
+/* 事例を見るボタンのスタイル調整 - 無料相談ボタンと同じサイズに */
+button[title*="事例を見る"] {
+  background: white !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 1rem 2rem !important;
+  font-size: 1.125rem !important;
+  min-width: 200px !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* 実績カードのサイズ調整 */
+div.bg-white\/90 {
+  padding: 1rem 1.25rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 140px !important;
+  text-align: center !important;
+}
+
+.text-sm.font-semibold {
+  font-size: 0.8rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.5rem !important;
+  height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.text-2xl.font-bold {
+  font-size: 1.15rem !important;
+  margin-bottom: 0.25rem !important;
+  margin-top: 0.25rem !important;
+}
+
+.text-sm.text-slate-600 {
+  font-size: 0.75rem !important;
+}
+
+/* 600px以上でカードのサイズ調整 */
+@media (min-width: 600px) {
+  .bg-white\/90 {
+    padding: 1.5rem !important;
+    min-height: 180px !important;
+  }
+
+  .text-sm.font-semibold {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.75rem !important;
+    height: 3rem !important;
+  }
+
+  .text-2xl.font-bold {
+    font-size: 1.5rem !important;
+  }
+
+  .text-sm.text-slate-600 {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* 900px以上でカードのサイズ調整 */
+@media (min-width: 900px) {
+  .bg-white\/90 {
+    padding: 2rem !important;
+    min-height: 200px !important;
+  }
+
+  .text-sm.font-semibold {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    height: 3rem !important;
+  }
+
+  .text-2xl.font-bold {
+    font-size: 1.75rem !important;
+  }
+
+  .text-sm.text-slate-600 {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* 1200px以上でカードのサイズ調整 */
+@media (min-width: 1200px) {
+  .bg-white\/90 {
+    padding: 2rem 1.75rem !important;
+    min-height: 200px !important;
+  }
+
+  .text-sm.font-semibold {
+    font-size: 0.95rem !important;
+    margin-bottom: 1rem !important;
+    height: 2.5rem !important;
+  }
+
+  .text-2xl.font-bold {
+    font-size: 1.65rem !important;
+  }
+
+  .text-sm.text-slate-600 {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* 1400px以上でカードのバランス最適化 */
+@media (min-width: 1400px) {
+  .bg-white\/90 {
+    padding: 2.25rem 2rem !important;
+    min-height: 220px !important;
+  }
+
+  .text-sm.font-semibold {
+    font-size: 1rem !important;
+    height: 2.5rem !important;
+  }
+
+  .text-2xl.font-bold {
+    font-size: 1.75rem !important;
+  }
+
+  .text-sm.text-slate-600 {
+    font-size: 0.9rem !important;
+  }
+}
+</style>
+
+<div hidden=""><!--$--><!--/$--></div><div class="min-h-screen w-full overflow-y-auto snap-y snap-mandatory bg-gradient-to-br from-slate-50 to-blue-50 relative"><nav class="absolute top-0 left-0 right-0 z-50 px-4 py-2 bg-white/80 backdrop-blur-sm border-b border-white/20"><div class="max-w-7xl mx-auto flex items-center justify-between"><div class="flex items-center"><button class="transition-all duration-200 hover:opacity-80" title="Homeに戻る"><img alt="Lea Schritt Logo" loading="lazy" width="80" height="24" decoding="async" data-nimg="1" class="object-contain" style="color:transparent" src="/images/leaschritt.png"/></button></div><div class="hidden md:flex items-center space-x-8"><button class="text-sm font-medium transition-all duration-200 hover:text-blue-600 text-blue-600 border-b-2 border-blue-600 pb-1">Home</button><button class="text-sm font-medium transition-all duration-200 hover:text-blue-600 text-slate-600 hover:text-blue-600">Services</button><button class="text-sm font-medium transition-all duration-200 hover:text-blue-600 text-slate-600 hover:text-blue-600">Cases</button><button class="text-sm font-medium transition-all duration-200 hover:text-blue-600 text-slate-600 hover:text-blue-600">About</button><button class="text-sm font-medium transition-all duration-200 hover:text-blue-600 text-slate-600 hover:text-blue-600">Contact</button></div><div class="hidden md:block"><button class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">送信する</button></div><button class="md:hidden p-2 rounded-lg bg-white/50 hover:bg-white/70 transition-colors"><svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></nav><div class="h-full w-full" style="opacity:0;transform:translateY(300px)"><section class="min-h-screen flex items-center justify-center relative overflow-hidden snap-start snap-always"><video class="absolute inset-0 w-full h-full object-cover z-5" autoPlay="" muted="" loop="" playsInline="" preload="metadata" poster="/images/hero-poster.jpg"><source src="/videos/hero-background.mp4" type="video/mp4"/>  <!-- -->Your browser does not support the video tag.</video><div class="absolute inset-0 z-0" style="background:linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #b0dfa1 100%)"></div><div class="absolute inset-0 bg-gradient-to-br from-slate-900/60 via-slate-800/50 to-slate-900/60 z-10"></div><div class="relative z-20 max-w-7xl mx-auto px-6 text-center" style="padding-top: 100px;"><h1 class="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-2xl" style="text-shadow:2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5);opacity:0;transform:translateY(30px)"><span class="text-white"><span class="font-bold text-white relative" style="text-shadow:2px 2px 4px rgba(0,0,0,0.8);-webkit-text-stroke:1px #3b82f6;filter:drop-shadow(0 0 6px rgba(59, 130, 246, 0.4))">Data</span> drives Productivity, <span class="font-bold text-white relative" style="text-shadow:2px 2px 4px rgba(0,0,0,0.8);-webkit-text-stroke:1px #84cc16;filter:drop-shadow(0 0 6px rgba(132, 204, 22, 0.4))">Health</span> builds Resilience</span><br/><span class="text-xl md:text-3xl lg:text-4xl font-bold" style="color:#fbbf24;text-shadow:2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(251, 191, 36, 0.3)">企業と人の未来を、共に歩む伴走者</span></h1><p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg" style="text-shadow:1px 1px 3px rgba(0,0,0,0.8);opacity:0;transform:translateY(30px)"><span class="font-semibold text-white">データを武器に戦略策定から実行まで</span>を一気通貫で支援<br/><span class="font-semibold text-white">実効果が出るまで</span>伴奏します！</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12" style="opacity:0;transform:translateY(30px)"><div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-white/50 shadow-2xl"><div class="text-sm font-semibold mb-2 text-slate-700">データドリブンな営業組織の構築</div><div class="text-2xl font-bold mb-2 text-slate-800">+40億円/年</div><div class="text-sm text-slate-600">（大手設備建材メーカー様）</div></div><div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-white/50 shadow-2xl"><div class="text-sm font-semibold mb-2 text-slate-700">大手ECプラットフォームでの<br/>運用業務自動化</div><div class="text-2xl font-bold mb-2 text-slate-800">▲3,000時間/年</div><div class="text-sm text-slate-600">（メガベンチャー様）</div></div><div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-white/50 shadow-2xl"><div class="text-sm font-semibold mb-2 text-slate-700">ECサイト離反顧客特定モデルの構築</div><div class="text-2xl font-bold mb-2 text-slate-800">4倍</div><div class="text-sm text-slate-600">（大手製造業商社様）</div></div></div><div class="flex flex-col sm:flex-row gap-4 justify-center items-center" style="opacity:0;transform:translateY(30px)"><button title="送信する - Contactセクションに移動" class="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 min-w-[200px] hover:opacity-90 border-2 border-white/20 cursor-pointer" style="background:linear-gradient(to right, #01607B, #4682B4);text-shadow:1px 1px 2px rgba(0,0,0,0.5)">送信する</button></div></div></section></div><div class="hidden md:flex absolute inset-x-0 top-4 justify-center z-30"><button disabled="" title="前のセクションに移動" class="p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm border border-white/30 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed shadow-lg"><svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 15l-7-7-7 7"></path></svg></button></div><div class="hidden md:flex absolute inset-x-0 bottom-20 justify-center z-30"><button title="次のセクションに移動" class="p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm border border-white/30 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed shadow-lg"><svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9l7 7 7-7"></path></svg></button></div><div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30"><button title="セクション 1 に移動" class="w-3 h-3 rounded-full transition-all duration-300 shadow-lg bg-blue-600 w-8 shadow-blue-500/50"></button><button title="セクション 2 に移動" class="w-3 h-3 rounded-full transition-all duration-300 shadow-lg bg-white/60 hover:bg-white/80 border border-white/40"></button><button title="セクション 3 に移動" class="w-3 h-3 rounded-full transition-all duration-300 shadow-lg bg-white/60 hover:bg-white/80 border border-white/40"></button><button title="セクション 4 に移動" class="w-3 h-3 rounded-full transition-all duration-300 shadow-lg bg-white/60 hover:bg-white/80 border border-white/40"></button><button title="セクション 5 に移動" class="w-3 h-3 rounded-full transition-all duration-300 shadow-lg bg-white/60 hover:bg-white/80 border border-white/40"></button></div></div>
+
+<!-- お問い合わせセクション -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">お問い合わせ</h2>
+      <p class="text-xl text-gray-600">
+        ご質問やご相談がございましたら、お気軽にお問い合わせください。
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-xl p-8">
+      <form id="contactForm" class="space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+            お名前 *
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="お名前を入力してください"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+            メールアドレス *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="メールアドレスを入力してください"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+            メッセージ *
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder="メッセージを入力してください"
+          ></textarea>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+          >
+            送信する
+          </button>
+        </div>
+
+        <div id="submitMessage" class="text-center"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--$--><!--/$--><script src="/_next/static/chunks/webpack-4e08188f78b7cd2d.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[9766,[],\"\"]\n3:I[8924,[],\"\"]\n4:I[1959,[],\"ClientPageRoot\"]\n5:I[4198,[\"219\",\"static/chunks/219-a552be5d53462a94.js\",\"974\",\"static/chunks/app/page-846a616be6e8b8bf.js\"],\"default\"]\n8:I[4431,[],\"OutletBoundary\"]\na:I[5278,[],\"AsyncMetadataOutlet\"]\nc:I[4431,[],\"ViewportBoundary\"]\ne:I[4431,[],\"MetadataBoundary\"]\nf:\"$Sreact.suspense\"\n11:I[7150,[],\"\"]\n:HL[\"/_next/static/css/f1fa9895ef0df7e0.css\",\"style\"]\n:HL[\"/_next/static/css/0cb55fa33c900bdc.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"SwxzN78PBQjP-Lse3OXVH\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/f1fa9895ef0df7e0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/0cb55fa33c900bdc.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ja\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_5cffc6 __variable_5c4a2f font-sans antialiased\",\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L4\",null,{\"Component\":\"$5\",\"searchParams\":{},\"params\":{},\"promises\":[\"$@6\",\"$@7\"]}],null,[\"$\",\"$L8\",null,{\"children\":[\"$L9\",[\"$\",\"$La\",null,{\"promise\":\"$@b\"}]]}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$Lc\",null,{\"children\":\"$Ld\"}],null],[\"$\",\"$Le\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$f\",null,{\"fallback\":null,\"children\":\"$L10\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$11\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"6:{}\n7:\"$0:f:0:1:2:children:1:props:children:0:props:params\"\n"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n9:null\n"])</script><script>self.__next_f.push([1,"12:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"b:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Lea Schritt は、経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。\"}],[\"$\",\"link\",\"2\",{\"rel\":\"author\",\"href\":\"https://lea-schritt.co.jp\"}],[\"$\",\"meta\",\"3\",{\"name\":\"author\",\"content\":\"Lea Schritt\"}],[\"$\",\"meta\",\"4\",{\"name\":\"keywords\",\"content\":\"DX,データ可視化,BI,Power BI,Tableau,AI導入,RAG,AIエージェント,離反検知,貸倒検知,内製化,長崎 コンサル,九州 コンサル,伴走 実装\"}],[\"$\",\"meta\",\"5\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:site_name\",\"content\":\"Lea Schritt\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:locale\",\"content\":\"ja_JP\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:title\",\"content\":\"Lea Schritt｜データ×AIで成果まで伴走実装するコンサルティング\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:description\",\"content\":\"経営・データ・ITの三刀流で成果まで伴走実装。BI/営業改革、離反・貸倒検知、内製化支援まで一気通貫で支援。\"}],[\"$\",\"link\",\"14\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"$L12\",\"15\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"10:\"$b:metadata\"\n"])</script>
+
+<!-- ページ別トラッキング用JavaScript -->
+<script>
+// ページビュートラッキング
+function trackPageView(pageName, section = null) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', {
+      page_title: pageName,
+      page_location: window.location.href,
+      page_section: section || 'home'
+    });
+  }
+
+  // データレイヤーにプッシュ
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'page_view',
+      'page_name': pageName,
+      'page_section': section || 'home',
+      'timestamp': new Date().toISOString()
+    });
+  }
+}
+
+// ボタンクリックトラッキング
+function trackButtonClick(buttonName, section = null) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'button_click', {
+      button_name: buttonName,
+      page_section: section || 'home',
+      event_category: 'engagement'
+    });
+  }
+
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'button_click',
+      'button_name': buttonName,
+      'page_section': section || 'home',
+      'timestamp': new Date().toISOString()
+    });
+  }
+}
+
+// セクション表示トラッキング
+function trackSectionView(sectionName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'section_view', {
+      section_name: sectionName,
+      event_category: 'engagement'
+    });
+  }
+
+  if (typeof dataLayer !== 'undefined') {
+    dataLayer.push({
+      'event': 'section_view',
+      'section_name': sectionName,
+      'timestamp': new Date().toISOString()
+    });
+  }
+}
+
+// ページ読み込み時の初期トラッキング
+document.addEventListener('DOMContentLoaded', function() {
+  trackPageView('Lea Schritt - ホームページ', 'hero');
+
+  // ナビゲーションボタンにイベントリスナーを追加
+  const navButtons = document.querySelectorAll('nav button');
+  navButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const buttonText = this.textContent.trim();
+      trackButtonClick(buttonText, 'navigation');
+    });
+  });
+
+  // CTAボタンにイベントリスナーを追加
+  const ctaButtons = document.querySelectorAll('button[title*="送信する"], button[title*="事例を見る"]');
+  ctaButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const buttonText = this.textContent.trim();
+      trackButtonClick(buttonText, 'hero_cta');
+    });
+  });
+});
+
+// スクロール時のセクション表示トラッキング
+let sectionsViewed = new Set();
+window.addEventListener('scroll', function() {
+  // セクション表示の検出（簡易版）
+  const scrollPosition = window.scrollY;
+  const windowHeight = window.innerHeight;
+
+  if (scrollPosition > windowHeight * 0.5 && !sectionsViewed.has('services')) {
+    trackSectionView('services');
+    sectionsViewed.add('services');
+  }
+
+  if (scrollPosition > windowHeight * 1.5 && !sectionsViewed.has('cases')) {
+    trackSectionView('cases');
+    sectionsViewed.add('cases');
+  }
+});
+
+// お問い合わせフォームの送信処理
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contactForm');
+  const submitMessage = document.getElementById('submitMessage');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+      };
+
+      try {
+        const response = await fetch('/contact.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams(data),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          submitMessage.innerHTML = '<div class="text-green-600 font-medium">お問い合わせを受け付けました。ありがとうございます。</div>';
+          contactForm.reset();
+        } else {
+          submitMessage.innerHTML = '<div class="text-red-600 font-medium">' + result.message + '</div>';
+        }
+      } catch (error) {
+        submitMessage.innerHTML = '<div class="text-red-600 font-medium">エラーが発生しました。しばらく時間をおいて再度お試しください。</div>';
+      }
+    });
+  }
+});
+</script>
+
+<style>
+/* Aboutページ - コンサルタント詳細の配置改善 */
+.consultant-detail-panel {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+}
+</style>
+
+<script>
+// Aboutページのコンサルタントカード - 詳細情報へのスクロール機能
+(function() {
+  let clickHandlersAdded = new Set();
+
+  function setupConsultantCardScroll() {
+    // コンサルタントカードを探す
+    const cards = document.querySelectorAll('div[class*="rounded"]');
+
+    cards.forEach(card => {
+      // 栗山またはComing Soonを含み、詳細情報（Ryoga Kuriyama）ではないカード
+      const isConsultantCard = (card.textContent.includes('栗山 領河') ||
+                               card.textContent.includes('Coming Soon')) &&
+                              !card.textContent.includes('Ryoga Kuriyama') &&
+                              !card.textContent.includes('経歴');
+
+      if (isConsultantCard) {
+        // すでにイベントが設定されているかチェック
+        const cardId = card.textContent.substring(0, 30);
+        if (clickHandlersAdded.has(cardId)) return;
+
+        clickHandlersAdded.add(cardId);
+        card.style.cursor = 'pointer';
+
+        console.log('Setting up card:', cardId);
+
+        card.addEventListener('click', function(e) {
+          console.log('Card clicked!');
+
+          // 少し待ってから詳細パネルを探す（Reactがレンダリングするまで）
+          setTimeout(() => {
+            // 詳細パネルを探す（Ryoga Kuriyamaを含む要素）
+            const allDivs = document.querySelectorAll('div');
+            let detailPanel = null;
+
+            allDivs.forEach(div => {
+              if (div.textContent.includes('Ryoga Kuriyama') &&
+                  div.textContent.includes('経歴')) {
+                detailPanel = div;
+              }
+            });
+
+            if (detailPanel) {
+              console.log('Detail panel found, scrolling...');
+
+              // 詳細パネルの位置を取得
+              const rect = detailPanel.getBoundingClientRect();
+              const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+              const navHeight = 100;
+              const targetPosition = rect.top + scrollTop - navHeight;
+
+              console.log('Scrolling to:', targetPosition);
+
+              // スクロール
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            } else {
+              console.log('Detail panel not found yet');
+            }
+          }, 300);
+        }, { once: false });
+      }
+    });
+  }
+
+  // 初回実行
+  setTimeout(setupConsultantCardScroll, 1000);
+  setTimeout(setupConsultantCardScroll, 2000);
+  setTimeout(setupConsultantCardScroll, 3000);
+
+  // DOMの変更を監視
+  const observer = new MutationObserver(() => {
+    if (document.body.textContent.includes('コンサルタント')) {
+      setupConsultantCardScroll();
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+
+// ハンバーガーメニューの機能
+(function() {
+  let isMenuOpen = false;
+
+  function setupMobileMenu() {
+    // ハンバーガーボタンを探す
+    const hamburgerButton = document.querySelector('.md\\:hidden svg[viewBox="0 0 24 24"]');
+    if (!hamburgerButton) return;
+
+    const hamburgerBtn = hamburgerButton.closest('button');
+    if (!hamburgerBtn) return;
+
+    // モバイルメニューを作成
+    let mobileMenu = document.querySelector('.mobile-menu');
+    if (!mobileMenu) {
+      mobileMenu = document.createElement('div');
+      mobileMenu.className = 'mobile-menu';
+      mobileMenu.innerHTML = `
+        <div class="mobile-menu-items">
+          <div class="mobile-menu-item" data-section="home">Home</div>
+          <div class="mobile-menu-item" data-section="services">Services</div>
+          <div class="mobile-menu-item" data-section="cases">Cases</div>
+          <div class="mobile-menu-item" data-section="about">About</div>
+          <div class="mobile-menu-item" data-section="contact">Contact</div>
+          <button class="mobile-cta-btn bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-lg" style="margin-top: 0.5rem;">送信する</button>
+        </div>
+      `;
+      document.body.appendChild(mobileMenu);
+    }
+
+    // ハンバーガーアイコンを×に切り替える関数
+    function toggleMenuIcon(show) {
+      if (show) {
+        // ×アイコンに変更
+        hamburgerButton.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      } else {
+        // ハンバーガーアイコンに戻す
+        hamburgerButton.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      }
+    }
+
+    // ハンバーガーボタンのクリックイベント（トグル機能）
+    hamburgerBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      isMenuOpen = !isMenuOpen;
+
+      if (isMenuOpen) {
+        mobileMenu.classList.add('active');
+        toggleMenuIcon(true);
+      } else {
+        mobileMenu.classList.remove('active');
+        toggleMenuIcon(false);
+      }
+    });
+
+    // メニュー項目のクリックイベント（ページ遷移）
+    const menuItems = mobileMenu.querySelectorAll('.mobile-menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const section = this.dataset.section;
+
+        // メニューを閉じる
+        mobileMenu.classList.remove('active');
+        isMenuOpen = false;
+        toggleMenuIcon(false);
+
+        // ナビゲーションメニューのボタンをクリックして遷移
+        const navButtons = document.querySelectorAll('nav button');
+        navButtons.forEach(btn => {
+          const btnText = btn.textContent.trim().toLowerCase();
+          if (btnText === section.toLowerCase()) {
+            btn.click();
+          }
+        });
+
+        // ページの一番上にスクロール
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);
+      });
+    });
+
+    // CTAボタンのクリックイベント
+    const ctaBtn = mobileMenu.querySelector('.mobile-cta-btn');
+    if (ctaBtn) {
+      ctaBtn.addEventListener('click', function() {
+        // メニューを閉じる
+        mobileMenu.classList.remove('active');
+        isMenuOpen = false;
+        toggleMenuIcon(false);
+
+        // Contactセクションに移動
+        const contactBtn = Array.from(document.querySelectorAll('nav button')).find(btn =>
+          btn.textContent.trim().toLowerCase() === 'contact'
+        );
+        if (contactBtn) contactBtn.click();
+
+        // ページの一番上にスクロール
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);
+      });
+    }
+  }
+
+  // 初回実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupMobileMenu);
+  } else {
+    setupMobileMenu();
+  }
+
+  // Reactのレンダリング後にも実行
+  setTimeout(setupMobileMenu, 1000);
+})();
+
+// 事例を見るボタンのクリックイベントとサイズ修正
+(function() {
+  function setupCaseButton() {
+    const caseButton = document.querySelector('button[title*="事例を見る"]');
+
+    if (caseButton) {
+      // サイズ修正
+      caseButton.style.padding = '1rem 2rem';
+      caseButton.style.minWidth = '200px';
+      caseButton.style.width = 'auto';
+      caseButton.style.height = 'auto';
+      caseButton.style.display = 'inline-flex';
+      caseButton.style.alignItems = 'center';
+      caseButton.style.justifyContent = 'center';
+      caseButton.style.textAlign = 'center';
+      caseButton.style.fontSize = '1.125rem';
+      caseButton.style.fontWeight = '600';
+
+      // クリックイベント追加（まだ追加されていない場合のみ）
+      if (!caseButton.dataset.clickSetup) {
+        caseButton.dataset.clickSetup = 'true';
+
+        caseButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          // Casesページのナビゲーションボタンを探してクリック
+          const navButtons = document.querySelectorAll('nav button');
+          const casesBtn = Array.from(navButtons).find(btn =>
+            btn.textContent.trim().toLowerCase() === 'cases'
+          );
+
+          if (casesBtn) {
+            casesBtn.click();
+
+            // ページの一番上にスクロール
+            setTimeout(() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+          }
+        });
+      }
+    }
+  }
+
+  // 初回実行
+  setTimeout(setupCaseButton, 500);
+  setTimeout(setupCaseButton, 1000);
+  setTimeout(setupCaseButton, 2000);
+
+  // DOM変更を監視
+  const observer = new MutationObserver(setupCaseButton);
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+
+// 相談するボタンの画面遷移機能（Services、Cases、Aboutページ用）
+(function() {
+  let handledButtons = new WeakSet();
+
+  function setupConsultationButtons() {
+    // 「相談する」ボタンを探す
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach(button => {
+      const buttonText = button.textContent.trim();
+
+      // 「相談する」を含むボタンで、まだ処理していないもの
+      if (buttonText.includes('相談する') && !handledButtons.has(button)) {
+        handledButtons.add(button);
+
+        console.log('Found consultation button:', buttonText);
+
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          console.log('Consultation button clicked, navigating to Contact page');
+
+          // Contactページのナビゲーションボタンを探してクリック
+          const navButtons = document.querySelectorAll('nav button');
+          const contactBtn = Array.from(navButtons).find(btn =>
+            btn.textContent.trim().toLowerCase() === 'contact'
+          );
+
+          if (contactBtn) {
+            contactBtn.click();
+
+            // ページの一番上にスクロール
+            setTimeout(() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+          }
+        }, true); // useCapture = true で確実にキャッチ
+      }
+    });
+  }
+
+  // 初回実行
+  setTimeout(setupConsultationButtons, 1000);
+  setTimeout(setupConsultationButtons, 2000);
+  setTimeout(setupConsultationButtons, 3000);
+
+  // DOMの変更を監視して、新しいボタンが追加されたら処理
+  const observer = new MutationObserver(() => {
+    setupConsultationButtons();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+
+</body></html>

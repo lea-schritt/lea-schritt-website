@@ -1,0 +1,57 @@
+# セキュリティ設定
+
+# ディレクトリリスティングを無効化
+Options -Indexes
+
+# 機密ファイルへのアクセスを拒否
+<FilesMatch "^(contacts\.json|rate_limit\.json|debug\.php|\.env|\.git|composer\.json|composer\.lock|\.htaccess)$">
+    Require all denied
+</FilesMatch>
+
+# PHPファイルの直接アクセスを制限（contact.php以外）
+<FilesMatch "^(?!contact\.php$).*\.php$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>
+
+# HTTPセキュリティヘッダー
+<IfModule mod_headers.c>
+    # XSS攻撃対策
+    Header set X-XSS-Protection "1; mode=block"
+
+    # クリックジャッキング対策
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # MIMEタイプスニッフィング対策
+    Header set X-Content-Type-Options "nosniff"
+
+    # リファラーポリシー
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # コンテンツセキュリティポリシー（CSP）
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self';"
+
+    # Permissions Policy
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ファイルアップロードサイズ制限
+php_value upload_max_filesize 2M
+php_value post_max_size 2M
+
+# エラーページの設定
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+
+# HTTPSリダイレクト（本番環境で有効化）
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# 特定のファイル拡張子へのアクセスを拒否
+<FilesMatch "\.(log|bak|swp|tmp|sql|zip|tar|gz)$">
+    Require all denied
+</FilesMatch>
