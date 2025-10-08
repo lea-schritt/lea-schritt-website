@@ -219,7 +219,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // 送信元・送信先の設定
             $from_email = getenv('SMTP_FROM_EMAIL') ?: 'ryoga.kuriyama@lea-schritt.com';
-            $from_name = getenv('SMTP_FROM_NAME') ?: 'Lea Schritt Webサイト';
+            $from_name = getenv('SMTP_FROM_NAME') ?: 'Lea Schritt Co., Ltd.';
             $mail->setFrom($from_email, $from_name);
             $mail->addAddress('info@lea-schritt.com', 'Lea Schritt');
             $mail->addReplyTo($email, $name);
