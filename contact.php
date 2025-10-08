@@ -210,8 +210,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Port       = getenv('SMTP_PORT') ?: 587;
             $mail->CharSet    = 'UTF-8';
 
+            // デバッグモード（問題解決後は削除）
+            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            // $mail->Debugoutput = function($str, $level) {
+            //     error_log("SMTP Debug level $level; message: $str");
+            // };
+
             // 送信元・送信先の設定
-            $mail->setFrom($email, $name);
+            $from_email = getenv('SMTP_FROM_EMAIL') ?: 'info@lea-schritt.com';
+            $from_name = getenv('SMTP_FROM_NAME') ?: 'Lea Schritt Webサイト';
+            $mail->setFrom($from_email, $from_name);
             $mail->addAddress('info@lea-schritt.com', 'Lea Schritt');
             $mail->addReplyTo($email, $name);
 
