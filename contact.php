@@ -205,7 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();
             $mail->Host       = getenv('SMTP_HOST') ?: 'smtp.office365.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = getenv('SMTP_USERNAME') ?: 'info@lea-schritt.com';
+            $mail->Username   = getenv('SMTP_USERNAME') ?: 'ryoga.kuriyama@lea-schritt.com';
             $mail->Password   = getenv('SMTP_PASSWORD'); // 環境変数から読み込み
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = getenv('SMTP_PORT') ?: 587;
@@ -218,7 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             };
 
             // 送信元・送信先の設定
-            $from_email = getenv('SMTP_FROM_EMAIL') ?: 'info@lea-schritt.com';
+            $from_email = getenv('SMTP_FROM_EMAIL') ?: 'ryoga.kuriyama@lea-schritt.com';
             $from_name = getenv('SMTP_FROM_NAME') ?: 'Lea Schritt Webサイト';
             $mail->setFrom($from_email, $from_name);
             $mail->addAddress('info@lea-schritt.com', 'Lea Schritt');
