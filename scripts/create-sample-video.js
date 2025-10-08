@@ -1,0 +1,107 @@
+const fs = require('fs');
+const path = require('path');
+
+// サンプル動画用のHTMLファイルを作成
+const createSampleVideoHTML = () => {
+  const htmlContent = `
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Video Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+        .text {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        .subtext {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .floating-element {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements" id="floatingElements"></div>
+    <div class="container">
+        <div class="logo">LS</div>
+        <div class="text">Lea Schritt</div>
+        <div class="subtext">Data drives Productivity<br>Health builds Resilience</div>
+    </div>
+    <script>
+        // フローティング要素を生成
+        function createFloatingElements() {
+            const container = document.getElementById('floatingElements');
+            for (let i = 0; i < 20; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.left = Math.random() * 100 + '%';
+                element.style.animationDelay = Math.random() * 6 + 's';
+                element.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                container.appendChild(element);
+            }
+        }
+        createFloatingElements();
+    </script>
+</body>
+</html>`;
+
+  return htmlContent;
+};
+
+// サンプル動画用のHTMLファイルを作成
+const htmlContent = createSampleVideoHTML();
+const htmlPath = path.join(__dirname, '../public/sample-video.html');
+
+fs.writeFileSync(htmlPath, htmlContent);
+console.log('サンプル動画用HTMLファイルを作成しました:', htmlPath);
+console.log('ブラウザで開いて、動画録画ソフトで録画してください。');
+console.log('録画時間: 30-60秒');
+console.log('解像度: 1920x1080');
+console.log('形式: MP4');
