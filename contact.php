@@ -203,7 +203,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // SMTPの設定（Outlook/Microsoft 365）
             $mail->isSMTP();
-            $mail->Host       = getenv('SMTP_HOST') ?: 'smtp-mail.outlook.com';
+            $mail->Host       = getenv('SMTP_HOST') ?: 'smtp.office365.com';
             $mail->SMTPAuth   = true;
             $mail->Username   = getenv('SMTP_USERNAME') ?: 'info@lea-schritt.com';
             $mail->Password   = getenv('SMTP_PASSWORD'); // 環境変数から読み込み
