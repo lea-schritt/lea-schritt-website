@@ -121,37 +121,48 @@ export default function Home() {
   }
 
   return (
-    <div
-      {...handlers}
-      className="h-screen w-full overflow-x-hidden overflow-y-auto bg-gradient-to-br from-slate-50 to-blue-50 relative"
-    >
-      <Navigation 
-        currentSection={currentSection}
-        totalSections={sections.length}
-        onSectionChange={goToSection}
-      />
+    <>
+      {/* モバイル: 縦スクロール表示 */}
+      <div className="md:hidden w-full overflow-y-auto bg-gradient-to-br from-slate-50 to-blue-50">
+        <Hero onNavigateToContact={navigateToContact} onNavigateToCases={navigateToCases} />
+        <Services />
+        <CaseStudies />
+        <About />
+        <Contact />
+      </div>
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentSection}
-          initial={{ x: 300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -300, opacity: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-            duration: 0.6
-          }}
-          className="min-h-full w-full overflow-y-auto"
-        >
-          {currentSection === 0 ? (
-            <Hero onNavigateToContact={navigateToContact} onNavigateToCases={navigateToCases} />
-          ) : (
-            <CurrentComponent />
-          )}
-        </motion.div>
-      </AnimatePresence>
+      {/* デスクトップ: セクション切り替え表示 */}
+      <div
+        {...handlers}
+        className="hidden md:block h-screen w-full overflow-x-hidden overflow-y-auto bg-gradient-to-br from-slate-50 to-blue-50 relative"
+      >
+        <Navigation
+          currentSection={currentSection}
+          totalSections={sections.length}
+          onSectionChange={goToSection}
+        />
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSection}
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -300, opacity: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 30,
+              duration: 0.6
+            }}
+            className="min-h-full w-full overflow-y-auto"
+          >
+            {currentSection === 0 ? (
+              <Hero onNavigateToContact={navigateToContact} onNavigateToCases={navigateToCases} />
+            ) : (
+              <CurrentComponent />
+            )}
+          </motion.div>
+        </AnimatePresence>
 
       {/* Desktop Navigation Arrows - 常時表示 */}
       <div className="hidden md:flex absolute inset-x-0 top-4 justify-center z-30">
@@ -180,21 +191,22 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Progress indicator - 常時表示 */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
-        {sections.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSection(index)}
-            title={`セクション ${index + 1} に移動`}
-            className={`w-3 h-3 rounded-full transition-all duration-300 shadow-lg ${
-              index === currentSection 
-                ? 'bg-blue-600 w-8 shadow-blue-500/50' 
-                : 'bg-white/60 hover:bg-white/80 border border-white/40'
-            }`}
-          />
-        ))}
+        {/* Progress indicator - 常時表示 */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+          {sections.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSection(index)}
+              title={`セクション ${index + 1} に移動`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 shadow-lg ${
+                index === currentSection
+                  ? 'bg-blue-600 w-8 shadow-blue-500/50'
+                  : 'bg-white/60 hover:bg-white/80 border border-white/40'
+              }`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
