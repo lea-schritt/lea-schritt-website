@@ -17,6 +17,7 @@ use PHPMailer\PHPMailer\Exception;
 error_reporting(E_ALL);
 ini_set('display_errors', 0); // 本番環境ではエラー表示を無効化
 ini_set('log_errors', 1); // エラーログに記録
+ini_set('error_log', __DIR__ . '/smtp_error.log'); // エラーログファイル
 
 // セキュリティヘッダーの設定
 header('X-Content-Type-Options: nosniff');
@@ -211,10 +212,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->CharSet    = 'UTF-8';
 
             // デバッグモード（問題解決後は削除）
-            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-            // $mail->Debugoutput = function($str, $level) {
-            //     error_log("SMTP Debug level $level; message: $str");
-            // };
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            $mail->Debugoutput = function($str, $level) {
+                error_log("SMTP Debug level $level; message: $str");
+            };
 
             // 送信元・送信先の設定
             $from_email = getenv('SMTP_FROM_EMAIL') ?: 'info@lea-schritt.com';
